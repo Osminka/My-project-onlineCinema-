@@ -1,0 +1,759 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA745A83-BA26-4B4D-8CD7-0E05039E5D87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>My_project</RootNamespace>
+    <AssemblyName>My project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>..\packages\Siticone.Desktop.UI.2.0.9\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllForm.cs" />
+    <Compile Include="black_mirror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="black_mirror.Designer.cs">
+      <DependentUpon>black_mirror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bones.Designer.cs">
+      <DependentUpon>bones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cartoons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cartoons.Designer.cs">
+      <DependentUpon>cartoons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chernobyl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chernobyl.Designer.cs">
+      <DependentUpon>chernobyl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compilations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compilations.Designer.cs">
+      <DependentUpon>compilations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor sleep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor sleep.Designer.cs">
+      <DependentUpon>doctor sleep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorH.Designer.cs">
+      <DependentUpon>doctorH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film.Designer.cs">
+      <DependentUpon>Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="green book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="green book.Designer.cs">
+      <DependentUpon>green book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="How_to_Get.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="How_to_Get.Designer.cs">
+      <DependentUpon>How_to_Get.cs</DependentUpon>
+    </Compile>
+    <Compile Include="joker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="joker.Designer.cs">
+      <DependentUpon>joker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bitva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>bitva.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mentalist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mentalist.Designer.cs">
+      <DependentUpon>mentalist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oCenter.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oplata.Designer.cs">
+      <DependentUpon>Oplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="peacky_blinders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="peacky_blinders.Designer.cs">
+      <DependentUpon>peacky_blinders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plus.Designer.cs">
+      <DependentUpon>Plus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Probnaya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Probnaya.Designer.cs">
+      <DependentUpon>Probnaya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="serials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="serials.Designer.cs">
+      <DependentUpon>serials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shutter Island.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shutter Island.Designer.cs">
+      <DependentUpon>Shutter Island.cs</DependentUpon>
+    </Compile>
+    <Compile Include="split.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="split.Designer.cs">
+      <DependentUpon>split.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Shawshank Redemption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Shawshank Redemption.Designer.cs">
+      <DependentUpon>The Shawshank Redemption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="time.Designer.cs">
+      <DependentUpon>time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ВкладкаМультики.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ВкладкаМультики.Designer.cs">
+      <DependentUpon>ВкладкаМультики.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ВкладкаСериалы.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ВкладкаСериалы.Designer.cs">
+      <DependentUpon>ВкладкаСериалы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ВкладкаФильмы.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ВкладкаФильмы.Designer.cs">
+      <DependentUpon>ВкладкаФильмы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Избранное.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Избранное.Designer.cs">
+      <DependentUpon>Избранное.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="black_mirror.resx">
+      <DependentUpon>black_mirror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bones.resx">
+      <DependentUpon>bones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cartoons.resx">
+      <DependentUpon>cartoons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chernobyl.resx">
+      <DependentUpon>chernobyl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compilations.resx">
+      <DependentUpon>compilations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor sleep.resx">
+      <DependentUpon>doctor sleep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorH.resx">
+      <DependentUpon>doctorH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film.resx">
+      <DependentUpon>Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="green book.resx">
+      <DependentUpon>green book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="How_to_Get.resx">
+      <DependentUpon>How_to_Get.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="joker.resx">
+      <DependentUpon>joker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bitva.resx">
+      <DependentUpon>bitva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mentalist.resx">
+      <DependentUpon>mentalist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oplata.resx">
+      <DependentUpon>Oplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peacky_blinders.resx">
+      <DependentUpon>peacky_blinders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plus.resx">
+      <DependentUpon>Plus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Probnaya.resx">
+      <DependentUpon>Probnaya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="serials.resx">
+      <DependentUpon>serials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shutter Island.resx">
+      <DependentUpon>Shutter Island.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="split.resx">
+      <DependentUpon>split.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Shawshank Redemption.resx">
+      <DependentUpon>The Shawshank Redemption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="time.resx">
+      <DependentUpon>time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ВкладкаМультики.resx">
+      <DependentUpon>ВкладкаМультики.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ВкладкаСериалы.resx">
+      <DependentUpon>ВкладкаСериалы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ВкладкаФильмы.resx">
+      <DependentUpon>ВкладкаФильмы.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Избранное.resx">
+      <DependentUpon>Избранное.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-Fabay8w93Cx2wtJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-TKDQWB47oBii8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-8UxXeY6IaXmavb8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-vOOJFXXGM8U5Cu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-xPXgEndsnR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-Q3JDgoONxfgnX.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-5oWhy1gyhEOJ5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-UM3H53Wk0RvekWY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-X8lpGw43tVs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-49xQmhJz9V4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-cinema-premiere-poster-with-red-seats-background_165143-487.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie-cinema-premiere-poster-with-red-seats-background_165143-4871.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\джокер для формы.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor_Sleep_%28poster%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-p4VS7k9gZA4UpE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-Rjr8Cf9YM4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-jm2HJw5S15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-w7423eg4S7cq3n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-hqMv1MAj41UGJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-SbGsUmSLfuFboA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-LKNk8jhQzwFZaTk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-VOTm7KFzlXrD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-Dzs77vqayIVvbQk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-BcdHKfSmqR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2561381_search_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2561381_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-Rds8F1LbQOlAr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807_search_icon %283%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-NY3swYHRM7c7KFU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71815_drama_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-sad-mask-83808.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-FhFv1t1uacYTHp8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-sad-mask-83808 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798552.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798553.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798555.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798557.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798562.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798563.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo5217752320060798569.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Чернобыль.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Чернобыль1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbb546ea4f350od89x13c.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbb546ea4f350od89x13c1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7bd403fc3a185f967d5454db28f940.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\274px-ОстрКоз.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900 %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300x450.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900 %282%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intouchables.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Split_poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900 %283%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I,_Tonya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Тёмный_рыцарь_%282008%29_постер.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titanic_%28Official_Film_Poster%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Hate_U_Give.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300x450 %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\266px-Despicable_Me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\272px-Frozen_%282013%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\273px-Rapunzel_poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\271px-Головоломка_2015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300x450 %282%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900 %284%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\274px-Movie_poster_monsters_inc_2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bukshop_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photorep_imageid_484051_15_9e485111_d_850.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\678x380.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1400x0.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Без названия.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\678x380 %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216436_arrow_back_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216437_back_arrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\172477_question_help_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\745018_information_help_info_message_question_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3937344_help_helpdesk_info_information_question_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\фон.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\imgonline-com-ua-Resize-5FE3GxGS5Yo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Blur-MFt3NWBvcu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-t3vMj4MPZFSsczM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-tY0bbHQuWdhoNAUn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-GDI34HvdEZkU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-GDI34HvdEZkU1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Resize-GDI34HvdEZkU2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgonline-com-ua-Blur-Gra8iKeRJvri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\753922_theatre_entertainment_film_movie_theater_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\299063_heart_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211755-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643770_favorite_heart_like_likes_love_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\299063-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211673-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\753922-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\753922-512 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211620_b_right_arrow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300x4501.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pictures\411px-ОстрКоз.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7bd403fc3a185f967d5454db28f9401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x900 %281%291.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\314807-512 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211673-512 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1814104-512 %288%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
